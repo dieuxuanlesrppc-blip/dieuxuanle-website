@@ -1,182 +1,193 @@
-<h1 style="color:red">TEST GIAO DIỆN MỚI</h1>
-<!DOCTYPE html>
-Update hero section
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lê Thị Diệu Xuân | Trồng trọt & Bảo vệ thực vật</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
-      color: #1f2d27;
-      background-color: #ffffff;
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
       line-height: 1.6;
+      color: #2c2c2c;
+      background: #f9faf9;
     }
 
-    /* ===== Navigation ===== */
     header {
-      position: fixed;
+      position: sticky;
       top: 0;
-      width: 100%;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid #e5ece8;
+      background: white;
+      border-bottom: 1px solid #e5e5e5;
       z-index: 1000;
     }
 
     nav {
       max-width: 1100px;
       margin: auto;
-      padding: 16px 24px;
+      padding: 12px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    nav .logo {
-      font-weight: 500;
-      letter-spacing: 0.5px;
+    nav strong {
+      font-size: 18px;
+      color: #2f6b3c;
     }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 28px;
-    }
-
-    nav ul li a {
+    nav a {
+      margin-left: 18px;
       text-decoration: none;
-      color: #1f2d27;
+      color: #333;
       font-size: 14px;
     }
 
-    nav ul li a:hover {
-      color: #4f7c64;
+    nav a:hover {
+      color: #2f6b3c;
     }
 
-    /* ===== Hero Section ===== */
     .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 120px 24px 80px;
-      background: linear-gradient(to bottom, #f7faf8, #ffffff);
+      background: linear-gradient(120deg, #2f6b3c, #6fae85);
+      color: white;
+      padding: 80px 20px;
       text-align: center;
     }
 
-    .hero-content {
-      max-width: 760px;
-    }
-
     .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      font-weight: 500;
-      margin-bottom: 24px;
+      font-size: 36px;
+      margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 17px;
-      color: #4a5f55;
-      margin-bottom: 36px;
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
     }
 
-    .hero .name {
-      font-weight: 500;
-      color: #1f2d27;
+    .hero .slogan {
+      margin-top: 15px;
+      font-style: italic;
+      opacity: 0.9;
     }
 
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
     }
 
-    .hero-buttons a {
+    .section h2 {
+      color: #2f6b3c;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .section p {
+      margin-bottom: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: #2f6b3c;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer a {
+      color: #dff2e5;
       text-decoration: none;
-      padding: 12px 26px;
-      border-radius: 30px;
-      font-size: 14px;
-      transition: all 0.3s ease;
-    }
-
-    .btn-primary {
-      background-color: #4f7c64;
-      color: #ffffff;
-    }
-
-    .btn-primary:hover {
-      background-color: #3e6552;
-    }
-
-    .btn-outline {
-      border: 1px solid #4f7c64;
-      color: #4f7c64;
-    }
-
-    .btn-outline:hover {
-      background-color: #4f7c64;
-      color: #ffffff;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 32px;
-      }
-
-      nav ul {
-        gap: 18px;
-      }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <nav>
-      <div class="logo">Diệu Xuân</div>
-      <ul>
-        <li><a href="#">Trang chủ</a></li>
-        <li><a href="#">Câu chuyện nghề</a></li>
-        <li><a href="#">Chuyên môn</a></li>
-        <li><a href="#">Hoạt động</a></li>
-        <li><a href="#">Kết nối</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>
-        Làm nông nghiệp bằng khoa học,<br />
-        đồng hành cùng người nông dân từ thực tiễn
-      </h1>
-      <p>
-        <span class="name">Lê Thị Diệu Xuân</span> – Chuyên viên Trồng trọt & Bảo vệ thực vật.<br />
-        Gắn bó với đồng ruộng, hệ sinh thái cây trồng và những giải pháp bền vững cho sản xuất nông nghiệp.
-      </p>
-      <div class="hero-buttons">
-        <a href="#" class="btn-primary">Câu chuyện nghề</a>
-        <a href="#" class="btn-outline">Lĩnh vực chuyên môn</a>
-      </div>
+<header>
+  <nav>
+    <strong>Diệu Xuân</strong>
+    <div>
+      <a href="#hero">Trang chủ</a>
+      <a href="#story">Câu chuyện nghề</a>
+      <a href="#expertise">Chuyên môn</a>
+      <a href="#activities">Hoạt động</a>
+      <a href="#contact">Liên hệ</a>
     </div>
-  </section>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <h1>Lê Thị Diệu Xuân</h1>
+  <p>Chuyên viên Trồng trọt & Bảo vệ thực vật</p>
+  <div class="slogan">“Theo đuổi khoa học, đồng hành cùng nông dân.”</div>
+</section>
+
+<!-- CÂU CHUYỆN NGHỀ -->
+<section id="story" class="section">
+  <h2>Câu chuyện nghề</h2>
+  <p>
+    Tôi gắn bó với lĩnh vực trồng trọt và bảo vệ thực vật từ thực tiễn sản xuất nông nghiệp,
+    nơi mỗi mùa vụ đều mang theo những thách thức về sâu bệnh, môi trường và sinh kế của người nông dân.
+  </p>
+  <p>
+    Trong quá trình công tác, tôi luôn trăn trở làm thế nào để các giải pháp khoa học
+    không chỉ đúng về chuyên môn mà còn phù hợp và dễ áp dụng ngoài đồng ruộng,
+    góp phần xây dựng một nền nông nghiệp an toàn và bền vững.
+  </p>
+</section>
+
+<!-- CHUYÊN MÔN -->
+<section id="expertise" class="section">
+  <h2>Lĩnh vực chuyên môn</h2>
+  <div class="grid">
+    <div class="card">Giám sát & dự báo sâu bệnh hại trên cây trồng</div>
+    <div class="card">Nhận diện sâu hại, thiên địch, bệnh hại và cỏ dại trên lúa</div>
+    <div class="card">Chuyển giao tiến bộ kỹ thuật & khuyến nông</div>
+    <div class="card">Kiểm dịch thực vật & phân tích nguy cơ dịch hại</div>
+    <div class="card">Bảo vệ thực vật theo hướng sinh thái, an toàn</div>
+  </div>
+</section>
+
+<!-- HOẠT ĐỘNG -->
+<section id="activities" class="section">
+  <h2>Hoạt động & chương trình tiêu biểu</h2>
+  <ul>
+    <li>Ecological Engineering in Rice Production</li>
+    <li>APPPC Training Workshop on Fruit Fly Management</li>
+    <li>IPM & IPHM Training of the Trainers (TOT)</li>
+    <li>Dự án LEGATO – Hệ sinh thái lúa châu Á</li>
+    <li>Ecological management of pests (IRRI, Philippines)</li>
+  </ul>
+</section>
+
+<!-- LIÊN HỆ -->
+<section id="contact" class="section">
+  <h2>Liên hệ</h2>
+  <p><strong>Email:</strong> dieuxuanlesrppc@gmail.com</p>
+  <p><strong>Điện thoại:</strong> 0907 525 758</p>
+  <p>
+    Trung tâm Trồng trọt và Bảo vệ thực vật phía Nam<br/>
+    Ấp Mới, xã Long Định, tỉnh Đồng Tháp
+  </p>
+</section>
+
+<footer>
+  © 2025 Lê Thị Diệu Xuân · Đồng hành cùng nông nghiệp bền vững
+</footer>
 
 </body>
 </html>
