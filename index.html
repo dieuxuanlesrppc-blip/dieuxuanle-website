@@ -6,87 +6,90 @@
   <title>Lê Thị Diệu Xuân | Trồng trọt & Bảo vệ thực vật</title>
 
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      line-height: 1.6;
-      color: #2c2c2c;
-      background: #f9faf9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f8faf8;
+      color: #2b2b2b;
+      line-height: 1.7;
     }
 
+    /* ===== NAV ===== */
     header {
       position: sticky;
       top: 0;
-      background: white;
-      border-bottom: 1px solid #e5e5e5;
+      background: #ffffff;
+      border-bottom: 1px solid #e6e6e6;
       z-index: 1000;
     }
 
     nav {
       max-width: 1100px;
       margin: auto;
-      padding: 12px 20px;
+      padding: 14px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    nav strong {
-      font-size: 18px;
+    nav .brand {
+      font-weight: 600;
       color: #2f6b3c;
+      font-size: 18px;
     }
 
     nav a {
       margin-left: 18px;
       text-decoration: none;
-      color: #333;
       font-size: 14px;
+      color: #333;
     }
 
     nav a:hover {
       color: #2f6b3c;
     }
 
+    /* ===== HERO ===== */
     .hero {
-      background: linear-gradient(120deg, #2f6b3c, #6fae85);
-      color: white;
-      padding: 80px 20px;
+      background: linear-gradient(120deg, #2f6b3c, #78b892);
+      color: #fff;
+      padding: 90px 20px;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 36px;
+      font-size: 40px;
       margin-bottom: 10px;
+      font-weight: 600;
     }
 
     .hero p {
       font-size: 18px;
-      max-width: 700px;
-      margin: auto;
+      margin: 6px 0;
     }
 
     .hero .slogan {
-      margin-top: 15px;
+      margin-top: 18px;
       font-style: italic;
-      opacity: 0.9;
+      opacity: 0.95;
     }
 
+    /* ===== SECTION ===== */
     .section {
       max-width: 1000px;
       margin: auto;
-      padding: 70px 20px;
+      padding: 80px 20px;
     }
 
     .section h2 {
-      color: #2f6b3c;
-      margin-bottom: 25px;
       font-size: 28px;
+      color: #2f6b3c;
+      margin-bottom: 30px;
     }
 
-    .section p {
-      margin-bottom: 15px;
-    }
-
+    /* ===== GRID ===== */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -94,22 +97,32 @@
     }
 
     .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: #ffffff;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
     }
 
+    /* ===== LIST ===== */
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    /* ===== FOOTER ===== */
     footer {
       background: #2f6b3c;
-      color: white;
+      color: #ffffff;
       text-align: center;
-      padding: 40px 20px;
+      padding: 45px 20px;
+      font-size: 14px;
     }
 
-    footer a {
-      color: #dff2e5;
-      text-decoration: none;
+    footer span {
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -118,7 +131,7 @@
 
 <header>
   <nav>
-    <strong>Diệu Xuân</strong>
+    <div class="brand">Diệu Xuân</div>
     <div>
       <a href="#hero">Trang chủ</a>
       <a href="#story">Câu chuyện nghề</a>
@@ -136,7 +149,7 @@
   <div class="slogan">“Theo đuổi khoa học, đồng hành cùng nông dân.”</div>
 </section>
 
-<!-- CÂU CHUYỆN NGHỀ -->
+<!-- STORY -->
 <section id="story" class="section">
   <h2>Câu chuyện nghề</h2>
   <p>
@@ -145,36 +158,36 @@
   </p>
   <p>
     Trong quá trình công tác, tôi luôn trăn trở làm thế nào để các giải pháp khoa học
-    không chỉ đúng về chuyên môn mà còn phù hợp và dễ áp dụng ngoài đồng ruộng,
+    không chỉ đúng về chuyên môn mà còn phù hợp, dễ áp dụng ngoài đồng ruộng,
     góp phần xây dựng một nền nông nghiệp an toàn và bền vững.
   </p>
 </section>
 
-<!-- CHUYÊN MÔN -->
+<!-- EXPERTISE -->
 <section id="expertise" class="section">
   <h2>Lĩnh vực chuyên môn</h2>
   <div class="grid">
-    <div class="card">Giám sát & dự báo sâu bệnh hại trên cây trồng</div>
+    <div class="card">Giám sát và dự báo sâu bệnh hại trên cây trồng</div>
     <div class="card">Nhận diện sâu hại, thiên địch, bệnh hại và cỏ dại trên lúa</div>
-    <div class="card">Chuyển giao tiến bộ kỹ thuật & khuyến nông</div>
-    <div class="card">Kiểm dịch thực vật & phân tích nguy cơ dịch hại</div>
-    <div class="card">Bảo vệ thực vật theo hướng sinh thái, an toàn</div>
+    <div class="card">Chuyển giao tiến bộ kỹ thuật và hoạt động khuyến nông</div>
+    <div class="card">Kiểm dịch thực vật và đánh giá nguy cơ sinh vật gây hại</div>
+    <div class="card">Bảo vệ thực vật theo hướng sinh thái, an toàn và bền vững</div>
   </div>
 </section>
 
-<!-- HOẠT ĐỘNG -->
+<!-- ACTIVITIES -->
 <section id="activities" class="section">
   <h2>Hoạt động & chương trình tiêu biểu</h2>
   <ul>
-    <li>Ecological Engineering in Rice Production</li>
+    <li>Ecological Engineering in Rice Production – Demonstration & Application</li>
     <li>APPPC Training Workshop on Fruit Fly Management</li>
     <li>IPM & IPHM Training of the Trainers (TOT)</li>
     <li>Dự án LEGATO – Hệ sinh thái lúa châu Á</li>
-    <li>Ecological management of pests (IRRI, Philippines)</li>
+    <li>Ecological management of pests – IRRI (Philippines)</li>
   </ul>
 </section>
 
-<!-- LIÊN HỆ -->
+<!-- CONTACT -->
 <section id="contact" class="section">
   <h2>Liên hệ</h2>
   <p><strong>Email:</strong> dieuxuanlesrppc@gmail.com</p>
@@ -186,7 +199,7 @@
 </section>
 
 <footer>
-  © 2025 Lê Thị Diệu Xuân · Đồng hành cùng nông nghiệp bền vững
+  <span>© 2025 Lê Thị Diệu Xuân · Đồng hành cùng nông nghiệp bền vững</span>
 </footer>
 
 </body>
