@@ -1,124 +1,179 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Lê Thị Diệu Xuân | Plant Protection Specialist</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lê Thị Diệu Xuân | Trồng trọt & Bảo vệ thực vật</title>
 
-<style>
-body{
-    margin:0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background:#f4f7f6;
-    color:#333;
-}
-.container{
-    display:flex;
-    max-width:1200px;
-    margin:auto;
-    min-height:100vh;
-}
-.sidebar{
-    width:32%;
-    background:#2f5d50;
-    color:white;
-    padding:50px 35px;
-}
-.sidebar h1{
-    font-size:28px;
-    margin-bottom:5px;
-}
-.sidebar h3{
-    font-weight:normal;
-    font-size:16px;
-    opacity:0.9;
-}
-.sidebar p{
-    line-height:1.6;
-    font-size:14px;
-}
-.quote{
-    font-style:italic;
-    margin:25px 0;
-    opacity:0.9;
-}
-.content{
-    width:68%;
-    padding:50px 55px;
-    background:#ffffff;
-}
-section{
-    margin-bottom:35px;
-}
-h2{
-    font-size:20px;
-    color:#2f5d50;
-    border-left:4px solid #2f5d50;
-    padding-left:10px;
-}
-ul{
-    padding-left:18px;
-}
-li{
-    margin-bottom:8px;
-}
-footer{
-    font-size:13px;
-    color:#777;
-}
-</style>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1f2d27;
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* ===== Navigation ===== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #e5ece8;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1f2d27;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      color: #4f7c64;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px 80px;
+      background: linear-gradient(to bottom, #f7faf8, #ffffff);
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: #4a5f55;
+      margin-bottom: 36px;
+    }
+
+    .hero .name {
+      font-weight: 500;
+      color: #1f2d27;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-buttons a {
+      text-decoration: none;
+      padding: 12px 26px;
+      border-radius: 30px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: #4f7c64;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: #3e6552;
+    }
+
+    .btn-outline {
+      border: 1px solid #4f7c64;
+      color: #4f7c64;
+    }
+
+    .btn-outline:hover {
+      background-color: #4f7c64;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      nav ul {
+        gap: 18px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-<div class="container">
 
-<div class="sidebar">
-    <h1>Lê Thị Diệu Xuân</h1>
-    <h3>Chuyên viên Trồng trọt & Bảo vệ thực vật</h3>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Diệu Xuân</div>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Câu chuyện nghề</a></li>
+        <li><a href="#">Chuyên môn</a></li>
+        <li><a href="#">Hoạt động</a></li>
+        <li><a href="#">Kết nối</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="quote">“Theo đuổi khoa học, đồng hành cùng nông dân.”</div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>
+        Làm nông nghiệp bằng khoa học,<br />
+        đồng hành cùng người nông dân từ thực tiễn
+      </h1>
+      <p>
+        <span class="name">Lê Thị Diệu Xuân</span> – Chuyên viên Trồng trọt & Bảo vệ thực vật.<br />
+        Gắn bó với đồng ruộng, hệ sinh thái cây trồng và những giải pháp bền vững cho sản xuất nông nghiệp.
+      </p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Câu chuyện nghề</a>
+        <a href="#" class="btn-outline">Lĩnh vực chuyên môn</a>
+      </div>
+    </div>
+  </section>
 
-    <p>
-        📧 dieuxuanlesrppc@gmail.com<br>
-        📞 0907 525 758
-    </p>
-</div>
-
-<div class="content">
-
-<section>
-<h2>Giới thiệu</h2>
-<p>
-Tôi là chuyên viên trong lĩnh vực trồng trọt và bảo vệ thực vật, gắn bó với công tác giám sát,
-dự báo sâu bệnh hại trên cây trồng và chuyển giao các tiến bộ kỹ thuật đến nông dân.
-Tôi hướng đến những giải pháp khoa học phù hợp với điều kiện sản xuất thực tiễn,
-góp phần xây dựng nền nông nghiệp an toàn và bền vững.
-</p>
-</section>
-
-<section>
-<h2>Lĩnh vực chuyên môn</h2>
-<ul>
-<li>Giám sát và dự báo sâu bệnh hại trên cây trồng</li>
-<li>Nhận diện sâu hại, thiên địch, bệnh hại và cỏ dại trên lúa</li>
-<li>Chuyển giao tiến bộ kỹ thuật và khuyến nông</li>
-<li>Kiểm dịch thực vật và phân tích nguy cơ sinh vật gây hại</li>
-</ul>
-</section>
-
-<section>
-<h2>Triết lý nghề nghiệp</h2>
-<p>
-Mỗi giải pháp kỹ thuật chỉ thực sự có ý nghĩa khi phù hợp với thực tiễn,
-dễ áp dụng và mang lại hiệu quả lâu dài cho người nông dân,
-đồng thời bảo vệ hệ sinh thái nông nghiệp.
-</p>
-</section>
-
-<footer>
-© Lê Thị Diệu Xuân | Plant Protection Specialist
-</footer>
-
-</div>
-</div>
 </body>
 </html>
